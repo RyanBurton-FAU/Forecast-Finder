@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ryan Burton Weather App</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Impact
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        
+        Location:<i><span id="location"></span></i>
+        
+      </div>
+      <div class="contact-info d-flex align-items-center">
+        
+        Date & Time<i><span id="time"></span></i>
+        
+      </div>
+      
+    </div>
+  </section><!-- End Top Bar -->
+
+
+  <!-- End Header -->
+
+  <main id="main" style="background-color: rgba(130, 122, 179, 0.774);">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Ryan Burton's Forecast Finder</h2>
+              <p>This is a weather app that calculates the precipiation, temperature, wind stats, and sunrise/sunset</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog" style="color:aliceblue">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 posts-list">
+
+          <div class="col-xl-4 col-md-6">
+            <article>
+
+              <div class="post-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/3937/3937493.png" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category" style="color:aliceblue">Precipitation</p>
+
+              <h2 class="title">
+                <div id="precipitation"></div>
+                <div id="weathercode"></div>
+              </h2>
+
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6" >
+            <article>
+
+              <div class="post-img">
+                <img src="https://t4.ftcdn.net/jpg/03/04/07/17/360_F_304071718_P1IyR8uuVDogvXXbjsxcAps7FB5E4DBJ.jpg" 
+                alt="" 
+                class="img-fluid"
+                >
+              </div>
+
+              <p class="post-category" style="color:aliceblue">Temperature</p>
+
+              <h2 class="title">
+                <div id="temperature"></div>
+                <div style="color: rgb(201, 56, 19);" id="high"></div>
+                <div style="color: rgb(79, 101, 202);" id="low"></div>
+
+              </h2>
+
+              <div class="d-flex align-items-center">
+                
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6" >
+            <article >
+
+              <div class="post-img" >
+                <img src="https://media.baamboozle.com/uploads/images/4171/1542111076_23726" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category" style="color:aliceblue">Wind Information</p>
+
+              <h2 class="title">
+                
+                  <div id="windspeed"></div></li>
+                  <div id="windirection"></div></li>
+                
+              </h2>
+
+              
+
+            </article>
+          </div><!-- End post list item -->
+
+        </div><!-- End blog posts list -->
+
+      </div>
+    </section><!-- End Blog Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <center> <div style="color: rgb(221, 112, 23);" id="sunrise"></div> <div style="color: rgb(60, 11, 116);" id="sunset" ></div></center>
+    <div  id="sunrise"></div>  <center><div id="dayornight"></div></center>  <div id="sunset" ></div>
+      
+  
+  </footer>
+
+    
+
+ <!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="weather.js"></script>
+
+</body>
+
+</html>
